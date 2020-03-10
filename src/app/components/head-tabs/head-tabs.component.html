@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="head-tabs">
+        <button [routerLink]="tab.url" class="btn-head__tabs" *ngFor="let tab of tabs" (click)="navigate(tab)" [ngClass]="{'top-border' : tab.selected}">
+            {{tab.name | uppercase}}
+        </button>
+    </div>
+    <div class="tabs">
+        <div class="tab-icons" *ngFor="let item of tabIcons" (click)="select(item)" [ngClass]="{'under_blue_line' : item.selected}">
+            <i [className]="item.icon" id="icon" aria-hidden="true"></i>
+            <p>{{ item.name | uppercase }}</p>
+        </div>
+    </div>
+</div>
