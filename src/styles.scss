@@ -4,20 +4,10 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .container {
     width: 990px;
     margin: 0 auto;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

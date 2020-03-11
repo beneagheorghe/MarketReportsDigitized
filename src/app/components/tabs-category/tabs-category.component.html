@@ -1,0 +1,40 @@
+<div class="container-select">
+    <div class="container-select-category">
+        <p class="text_select">Select Category</p>
+        <div>
+            <div class="tabs">
+                <button class="btn-tabs" *ngFor="let tab of tabs" (click)="select(tab)" [ngClass]="{'selected-tab' : tab.selected}">
+              {{ tab.name }}
+            </button>
+            </div>
+            <div class="container-link">
+                <table style="width: 100%;">
+                    <tr style="text-align: center;">
+                        <td style="padding: 10px 0;">
+                            <a href="">Market share of the largest generation in the electricity market</a>
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="padding: 10px 0;">
+                            <a href="">Share of the renewable energy in gross final energy consuption</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-select-country">
+        <p class="text_select">Select Country</p>
+        <div class="box">
+            <select>
+              <option value="" disabled selected hidden>- No country selected -</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+              <option>Option 5</option>
+            </select>
+        </div>
+    </div>
+</div>

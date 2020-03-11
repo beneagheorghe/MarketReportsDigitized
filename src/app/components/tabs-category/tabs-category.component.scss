@@ -1,0 +1,115 @@
+.container-select {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-select-category {
+    width: 435px;
+    height: 180px;
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-left: 5px;
+    z-index: 500 !important;
+    display: inline-block;
+}
+
+.container-link {
+    margin-top: -1px;
+    margin-left: -7px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #0094EB;
+}
+
+.text_select {
+    margin: 20px 0 15px 0 !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: #39455A;
+}
+
+.btn-tabs {
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    padding: 0 26px;
+    outline: none;
+    border: 1px solid #D9D9D8;
+    background-color: #F8F8F8;
+    margin-right: 4px;
+    cursor: pointer;
+    color: #6C6C6C;
+    font-size: 14px;
+}
+
+.selected-tab {
+    border: 1px solid #0094EB;
+    color: #0094EB !important;
+    background: #fff;
+    font-weight: 500;
+}
+
+a {}
+
+.container-select-country {
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #004882;
+}
+
+.box {
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 300px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    appearance: button;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 15px;
+    text-overflow: '';
+    font-family: 'Roboto', sans-serif;
+}
+
+.box::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 10px 10px;
+    font-size: 16px;
+}

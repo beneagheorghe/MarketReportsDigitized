@@ -12,78 +12,78 @@ export interface Icons {
 }
 
 @Component({
-  selector: "app-head-tabs",
-  templateUrl: "./head-tabs.component.html",
-  styleUrls: ["./head-tabs.component.scss"]
+  selector: 'app-head-tabs',
+  templateUrl: './head-tabs.component.html',
+  styleUrls: ['./head-tabs.component.scss']
 })
 export class HeadTabsComponent implements OnInit {
   tabs: Array<Tab> = [
     {
-      name: "Data Hub",
-      url: "/data_hub",
+      name: 'Data Hub',
+      url: '/data_hub',
       selected: false
     },
     {
-      name: "My Formulas",
-      url: "/my_formulas",
+      name: 'My Formulas',
+      url: '/my_formulas',
       selected: false
     },
     {
-      name: "Forecasts",
-      url: "/forecasts",
+      name: 'Forecasts',
+      url: '/forecasts',
       selected: false
     },
     {
-      name: "Market News",
-      url: "/market_news",
+      name: 'Market News',
+      url: '/market_news',
       selected: false
     },
     {
-      name: "Statistics",
-      url: "/statistics",
+      name: 'Statistics',
+      url: '/statistics',
       selected: false
     }
   ];
 
   tabIcons: Array<Icons> = [
     {
-      name: "Total Energy",
-      icon: "fas fa-bolt",
+      name: 'Total Energy',
+      icon: 'fas fa-bolt',
       selected: false
     },
     {
-      name: "Oil",
-      icon: "fa fa-tint",
+      name: 'Oil',
+      icon: 'fa fa-tint',
       selected: false
     },
     {
-      name: "Natural Gas",
-      icon: "fab fa-gripfire",
+      name: 'Natural Gas',
+      icon: 'fab fa-gripfire',
       selected: false
     },
     {
-      name: "Coal",
-      icon: "fas fa-cloud",
+      name: 'Coal',
+      icon: 'fas fa-cloud',
       selected: false
     },
     {
-      name: "Nuclear",
-      icon: "fas fa-radiation-alt",
+      name: 'Nuclear',
+      icon: 'fas fa-radiation-alt',
       selected: false
     },
     {
-      name: "ELECTRICITY",
-      icon: "fas fa-lightbulb",
+      name: 'ELECTRICITY',
+      icon: 'fas fa-lightbulb',
       selected: false
     },
     {
-      name: "Renewables",
-      icon: "fas fa-fan",
+      name: 'Renewables',
+      icon: 'fas fa-fan',
       selected: false
     },
     {
-      name: "CO2 Emmisions",
-      icon: "fab fa-cloudversify",
+      name: 'CO2 Emmisions',
+      icon: 'fab fa-cloudversify',
       selected: false
     }
   ];
