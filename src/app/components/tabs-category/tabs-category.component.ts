@@ -5,25 +5,50 @@ export interface Tab {
   selected: boolean;
 }
 
+export interface Link {
+  url: string;
+  name: string;
+}
+
+export interface Food {
+  value: string;
+  viewValue: string;
+}
 @Component({
-  selector: 'app-tabs-category',
-  templateUrl: './tabs-category.component.html',
-  styleUrls: ['./tabs-category.component.scss']
+  selector: "app-tabs-category",
+  templateUrl: "./tabs-category.component.html",
+  styleUrls: ["./tabs-category.component.scss"]
 })
 export class TabsCategoryComponent implements OnInit {
   tabs: Array<Tab> = [
     {
-      name: 'Main Indicators',
+      name: "Main Indicators",
       selected: true
     },
     {
-      name: 'Quantities',
+      name: "Quantities",
       selected: false
     },
     {
-      name: 'Prices',
+      name: "Prices",
       selected: false
     }
+  ];
+  links: Array<Link> = [
+    {
+      url: "/#",
+      name: "Market share of the largest generation in the electricity market"
+    },
+    {
+      url: "/#",
+      name: "Share of renewable energy in gross final energy consumption"
+    }
+  ];
+
+  foods: Food[] = [
+    { value: "steak-0", viewValue: "Steak" },
+    { value: "pizza-1", viewValue: "Pizza" },
+    { value: "tacos-2", viewValue: "Tacos" }
   ];
   constructor() {}
 

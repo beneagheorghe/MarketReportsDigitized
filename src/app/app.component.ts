@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'market-reports-digitized';
+  title = 'United Kingdom\'s Energy Production In 2016';
 }

@@ -7,14 +7,9 @@ import { Chart } from 'angular-highcharts';
   styleUrls: ['./charts-column.component.scss']
 })
 export class ChartsColumnComponent implements OnInit {
-  title: string = 'United Kingdom\'s Energy Production in 2016';
-
   constructor() {}
 
   chart = new Chart({
-    chart: {
-      type: 'column'
-    },
     colors: ['#0094EB'],
     title: {
       align: 'left',
@@ -25,9 +20,9 @@ export class ChartsColumnComponent implements OnInit {
     xAxis: {
       type: 'category',
       labels: {
-        rotation: -57,
+        rotation: -55,
         style: {
-          fontSize: '14px',
+          fontSize: '12px',
           fontFamily: 'Raboto, sans-serif'
         }
       }
@@ -45,6 +40,10 @@ export class ChartsColumnComponent implements OnInit {
     },
     series: [
       {
+        pointPadding: 0,
+        groupPadding: 0.1,
+        borderWidth: 0,
+        type: 'column',
         name: 'Population',
         data: [
           ['1990', 14999],

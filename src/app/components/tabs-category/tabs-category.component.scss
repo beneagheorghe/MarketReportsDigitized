@@ -19,6 +19,7 @@
     margin-top: -1px;
     margin-left: -7px;
     position: relative;
+    border-radius: 2px;
     z-index: 1;
     border: 1px solid #0094EB;
 }
@@ -50,7 +51,28 @@
     font-weight: 500;
 }
 
-a {}
+a {
+    color: #4A4A4A;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding: 10px 0;
+    &:hover {
+        background-color: #F5F8F9;
+    }
+}
 
 .container-select-country {
     width: 400px;
@@ -72,13 +94,13 @@ body {
 }
 
 .box select {
-    background-color: #0563af;
-    color: white;
+    background-color: #F5F8F9;
+    color: #A0A0A0;
     padding: 12px;
     width: 300px;
     border: none;
     font-size: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px rgba(43, 146, 206, 0.2);
     appearance: button;
     outline: none;
     -webkit-appearance: none;
@@ -99,14 +121,14 @@ body {
     text-align: center;
     font-size: 28px;
     line-height: 45px;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(160, 158, 158, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     pointer-events: none;
 }
 
 .box:hover::before {
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(113, 139, 255, 0.6);
+    background-color: rgba(29, 165, 243, 0.295);
 }
 
 .box select option {

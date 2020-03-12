@@ -10,6 +10,8 @@ import { TabsCategoryComponent } from './components/tabs-category/tabs-category.
 import { ChartsColumnComponent } from './components/charts/column/charts-column.component';
 import { ChartModule } from 'angular-highcharts';
 import { ChartsPieComponent } from './components/charts/pie/charts-pie.component';
+import { HeadTitleComponent } from './components/head-title/head-title.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ChartsPieComponent } from './components/charts/pie/charts-pie.component
     HeadTabsComponent,
     TabsCategoryComponent,
     ChartsColumnComponent,
-    ChartsPieComponent
+    ChartsPieComponent,
+    HeadTitleComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
