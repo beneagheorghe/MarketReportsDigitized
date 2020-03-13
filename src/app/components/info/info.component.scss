@@ -1,9 +1,8 @@
-.info {}
-
-.left-container {
-    float: left;
+.info {
+  display: block;
 }
-
+.left-container {
+}
 .circle-info {
     margin-left: 100px;
     margin-right: 100px;
@@ -20,5 +19,3 @@
     vertical-align: middle;
     line-height: 170px;
 }
-
-.right-container {}

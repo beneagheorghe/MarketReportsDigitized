@@ -3,7 +3,7 @@
         <p class="text_select">Select Category</p>
         <div>
             <div class="tabs">
-                <button class="btn-tabs" *ngFor="let tab of tabs" (click)="select(tab)" [ngClass]="{'selected-tab' : tab.selected}">
+                <button class="btn-tabs" *ngFor="let tab of tabs;let i = index" (click)="select(tab, i)" [ngClass]="{'selected-tab' : tab.selected}">
               {{ tab.name }}
             </button>
             </div>
@@ -21,7 +21,7 @@
 
     <div class="container-select-country ">
         <p class="text_select ">Select Country</p>
-        <!-- <div class="box ">
+        <div class="box ">
             <select>
               <option value=" " disabled selected hidden>- No country selected -</option>
               <option>Option 1</option>
@@ -30,14 +30,14 @@
               <option>Option 4</option>
               <option>Option 5</option>
             </select>
-        </div> -->
-        <mat-form-field class="incercare">
+        </div>
+        <!-- <mat-form-field class="incercare">
             <mat-label>- No country selected -</mat-label>
             <mat-select>
                 <mat-option *ngFor="let food of foods" [value]="food.value">
                     {{food.viewValue}}
                 </mat-option>
             </mat-select>
-        </mat-form-field>
+        </mat-form-field> -->
     </div>
 </div>

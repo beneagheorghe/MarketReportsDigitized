@@ -6,22 +6,21 @@
 }
 
 h1 {
-    padding: 10px 0;
     text-align: center;
-    font-weight: 700;
+    font-size: 22px;
+    margin: 12px 0;
+    font-weight: 900;
     color: #333;
 }
 
 i {
     margin-right: 10px;
-    left: 222px;
-    top: 15px;
+    color: #fff;
 }
 
-.circle-icon {
-    background: #0094EB;
-    padding-top: 10px;
-    width: 42px;
-    height: 30px;
+i.fas {
+    display: inline-block;
     border-radius: 50%;
+    padding: 0.3em 0.5em;
+    background: #0094EB;
 }

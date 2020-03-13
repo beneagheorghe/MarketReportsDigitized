@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header-title">
+        <h1>{{ title }}</h1>
+    </div>
+    <div class="cart-news">
+        <div class="row  no-gutters">
+            <div class="col-sm-3" *ngFor="let cart of carts">
+                <div class="cart">
+                    <p class="category"> <i class="fa fa-tint" id="icon" aria-hidden="true"></i>CATEGORY</p>
+                    <p class="title bottom-line">Title</p>
+                    <p class="body">{{ cart.body }}</p>
+                    <p class="icon-detail"><i class="far fa-arrow-alt-circle-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
